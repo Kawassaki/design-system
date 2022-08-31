@@ -1,19 +1,19 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
-  
+
   max-width: 1680px;
   max-height: 100vh;
   align-items: center;
   margin: 0 auto;
-`;
+`
 
 export const ColorSpan = styled.span`
-  ${({ color, textColor }: { color: string, textColor: string }) => css`
+  ${({ color, textColor }: { color: string; textColor: string }) => css`
     display: block;
     padding: 2rem;
     background-color: ${color};
@@ -21,7 +21,7 @@ export const ColorSpan = styled.span`
     font-family: 'Roboto', sans-serif;
     width: 13rem;
   `}
-`;
+`
 
 export const ColorPaletteSection = styled.div`
   display: flex;

@@ -1,9 +1,18 @@
-export type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'success' | 'warning' | 'neutral';
+import { ReactNode } from 'react'
+
+export type ButtonVariant =
+  | 'primary'
+  | 'secondary'
+  | 'danger'
+  | 'success'
+  | 'warning'
+  | 'neutral'
 
 export interface ButtonProps {
-  variant?: ButtonVariant;
+  variant?: ButtonVariant
+  children?: ReactNode
 }
 
 export interface ButtonContainerProps {
-  variant: ButtonVariant;
+  variant: ButtonVariant
 }

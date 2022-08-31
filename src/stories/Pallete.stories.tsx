@@ -1,11 +1,11 @@
-import { Palette } from "./Palette";
+import { Palette } from './Palette'
 
 export default {
-  title: "Design System",
-};
+  title: 'Design System',
+}
 
 const Template = () => {
-  return <Palette />;
-};
+  return <Palette />
+}
 
-export const ColorsPalette = Template.bind({});
+export const ColorsPalette = Template.bind({})
