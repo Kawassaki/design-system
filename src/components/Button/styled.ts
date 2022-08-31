@@ -6,6 +6,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
     css`
     width: 100px;
     height: 40px;
-    background-color: ${theme[variant]}
+    background-color: ${theme.colors[variant]};
+    color: ${theme.colors.text};
   `}
 `;

@@ -2,6 +2,7 @@ export type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'success' | 'wa
 
 export interface ButtonProps {
   variant?: ButtonVariant;
+  children?: ReactNode;
 }
 
 export interface ButtonContainerProps {
