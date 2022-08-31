@@ -1,4 +1,4 @@
-import { colors } from './colors';
+import { colors } from './colors'
 
 export default {
   title: 'dark',
@@ -8,5 +8,5 @@ export default {
     neutral: colors['blueGray-100'],
     background: colors['gray-900'],
   },
-  text: colors['gray-50']
+  text: colors['gray-50'],
 }

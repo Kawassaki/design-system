@@ -1,3 +1,3 @@
-import * as icons from "react-icons/md";
+import * as icons from 'react-icons/md'
 
-export default icons;
+export default icons

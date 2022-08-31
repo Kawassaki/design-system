@@ -1,11 +1,11 @@
-import { DarkMode } from "./DarkMode";
+import { DarkMode } from './DarkMode'
 
 export default {
-  title: "Design System",
-};
+  title: 'Design System',
+}
 
 const Template = () => {
-  return <DarkMode />;
-};
+  return <DarkMode />
+}
 
-export const DarkModeExample = Template.bind({});
+export const DarkModeExample = Template.bind({})
