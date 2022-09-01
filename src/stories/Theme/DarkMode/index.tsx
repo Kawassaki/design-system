@@ -1,15 +1,15 @@
-import { usePersistedState } from '../../hooks/usePersistedState'
-import { dark, light } from '../../styles/themes'
-import { Container, PageContainer, SwitchSection } from './index.styled'
-import Switch from 'react-switch'
-import { ThemeProvider } from 'styled-components'
-import icons from '../../components/Icons'
+import { usePersistedState } from "../../../hooks/usePersistedState";
+import { dark, light } from "../../../styles/themes";
+import { Container, PageContainer, SwitchSection } from "./index.styled";
+import Switch from "react-switch";
+import { ThemeProvider } from "styled-components";
+import icons from "../../../components/Icons";
 
 export function DarkMode() {
-  const [theme, setTheme] = usePersistedState('theme', light)
+  const [theme, setTheme] = usePersistedState("theme", light);
 
   function toggleTheme() {
-    setTheme(theme.title === 'light' ? dark : light)
+    setTheme(theme.title === "light" ? dark : light);
   }
 
   return (
@@ -22,7 +22,7 @@ export function DarkMode() {
             <icons.MdLightMode />
             <Switch
               onChange={toggleTheme}
-              checked={theme.title === 'dark'}
+              checked={theme.title === "dark"}
               checkedIcon={false}
               uncheckedIcon={false}
               height={10}
@@ -36,5 +36,5 @@ export function DarkMode() {
         </Container>
       </PageContainer>
     </ThemeProvider>
-  )
+  );
 }

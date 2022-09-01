@@ -8,7 +8,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 1rem;
     background-color: ${theme.colors.primary};
-    color: ${theme.text};
+    color: ${theme.colors.text};
     font-family: 'Roboto';
   `}
 `

@@ -1,12 +1,26 @@
-import { colors } from './colors'
+import {
+  themeBreakpointTokens,
+  themeColorTokens,
+  themeSpacingTokens,
+} from '../themeTokens'
 
-export default {
+export const dark = {
   title: 'dark',
-  colors: {
-    primary: colors['gray-800'],
-    secondary: colors['blueGray-800'],
-    neutral: colors['blueGray-100'],
-    background: colors['gray-900'],
+  breakpoints: {
+    ...themeBreakpointTokens,
   },
-  text: colors['gray-50'],
+  space: {
+    ...themeSpacingTokens,
+  },
+  colors: {
+    primary: themeColorTokens['color-primary-stronger'],
+    accent: themeColorTokens['color-accent-stronger'],
+    informative: themeColorTokens['color-informative-stronger'],
+    alert: themeColorTokens['color-alert-stronger'],
+    notice: themeColorTokens['color-notice-stronger'],
+    success: themeColorTokens['color-success-stronger'],
+    neutral: themeColorTokens['color-neutral-stronger'],
+    background: themeColorTokens['color-neutral-stronger'],
+    text: themeColorTokens['color-neutral-softest'],
+  },
 }
